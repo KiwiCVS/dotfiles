@@ -1,0 +1,64 @@
+* {
+    font-family: "Nunito", "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(12,12,12,0.75);
+    color: #e6e6e6;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 14px;
+}
+
+#workspaces {
+    padding: 0 6px;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    color: #666666;
+    background: transparent;
+}
+
+#workspaces button.empty {
+    color: #444444;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    color: #cccccc;
+    background: transparent;
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+
+#language,
+#clock,
+#pulseaudio,
+#network,
+#battery,
+#tray {
+    padding: 0 10px;
+    color: #e6e6e6;
+    background-color: transparent;
+}
+
+#pulseaudio.muted,
+#network.disconnected {
+    color: #666666;
+}
+
+#battery.warning:not(.charging) {
+    color: #aaaaaa;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #ffffff;
+    color: #000000;
+}

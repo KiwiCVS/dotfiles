@@ -1,0 +1,75 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 28,
+    "margin-top": 4,
+    "margin-left": 12,
+    "margin-right": 12,
+    "spacing": 8,
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "hyprland/language",
+        "pulseaudio",
+        "network",
+        "battery",
+        "tray"
+    ],
+
+    "hyprland/language": {
+         "format": "{}",
+         "format-en": "EN",
+         "format-ru": "RU",
+         "format-uk": "UA",
+         "on-click": "hyprctl switchxkblayout all next"
+    },
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "format-icons": {
+            "active": "●",
+            "default": "○",
+            "empty": "○"
+        },
+        "persistent-workspaces": {
+            "*": 10
+        },
+        "on-click": "activate"
+    },
+
+    "clock": {
+        "format": "{:%H:%M  ·  %a %d}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "pulseaudio": {
+        "format": "VOL {volume}%",
+        "format-muted": "MUTED",
+        "on-click": "pavucontrol"
+    },
+
+    "network": {
+        "format-wifi": "WIFI {signalStrength}%",
+        "format-ethernet": "ETH",
+        "format-disconnected": "OFFLINE",
+        "tooltip-format": "{ifname}: {ipaddr}"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "BAT {capacity}%",
+        "format-charging": "CHG {capacity}%"
+    },
+
+    "tray": {
+        "icon-size": 14,
+        "spacing": 6
+    }
+}
