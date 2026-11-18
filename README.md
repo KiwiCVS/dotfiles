@@ -1,1 +1,1 @@
-This is my first linux rice, put the wallpaper into the downloads folder please
+This is my first hyprland rice on arch linux, put the wallpaper into the downloads folder please
